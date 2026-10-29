@@ -11,7 +11,7 @@ export default function NotFound() {
         </div>
         <h1 className="mt-6 font-display text-3xl font-bold text-slate-100">Page not found</h1>
         <p className="mt-3 text-sm text-slate-400 leading-relaxed">
-          This route doesn’t exist in the SAMANVAYA AI demo. Head back to the command centre or the welcome screen.
+          This route doesn’t exist in the CaseMind AI demo. Head back to the command centre or the welcome screen.
         </p>
         <div className="mt-7 flex items-center justify-center gap-3">
           <Link to="/app" className="rounded-lg bg-cyan-400 px-5 py-2.5 text-[13px] font-semibold text-[#05222B] hover:bg-cyan-300">Open Command Centre</Link>

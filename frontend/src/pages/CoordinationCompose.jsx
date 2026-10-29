@@ -30,7 +30,7 @@ export default function CoordinationCompose() {
   });
   const [message, setMessage] = useState(() => {
     if (conflictParam) {
-      return `While working case ${casesParam ? casesParam.split(',')[0] : ''} we identified a potential overlap flagged by SAMANVAYA AI (${conflictParam}).${docParam ? ` We were about to request "${docParam}".` : ''} Proposing we align our document requests and next steps so the institution receives a single, coordinated set of instructions. Please acknowledge and advise.`;
+      return `While working case ${casesParam ? casesParam.split(',')[0] : ''} we identified a potential overlap flagged by CaseMind AI (${conflictParam}).${docParam ? ` We were about to request "${docParam}".` : ''} Proposing we align our document requests and next steps so the institution receives a single, coordinated set of instructions. Please acknowledge and advise.`;
     }
     return '';
   });

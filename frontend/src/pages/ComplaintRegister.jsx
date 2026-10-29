@@ -59,7 +59,7 @@ export default function ComplaintRegister() {
       timeline: [
         { ts: nowIso, actor: `${form.name} (complainant)`, type: 'received', text: 'Complaint registered in PGRC through the demo grievance portal.' },
         { ts: nowIso, actor: `${currentUser.name} · ${currentUser.bureau}`, type: 'ack', text: `Complaint acknowledged and assigned to ${currentUser.name}.` },
-        ...(detected ? [{ ts: nowIso, actor: 'SAMANVAYA AI', type: 'conflict', text: `Overlap scan at registration flagged ${detected.target.caseId} (${detected.target.bureau}) — officer reviewed the evidence before proceeding.` }] : []),
+        ...(detected ? [{ ts: nowIso, actor: 'CaseMind AI', type: 'conflict', text: `Overlap scan at registration flagged ${detected.target.caseId} (${detected.target.bureau}) — officer reviewed the evidence before proceeding.` }] : []),
       ],
       notes: [],
     };

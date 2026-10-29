@@ -1,4 +1,4 @@
-// ── SAMANVAYA AI · Demo dataset ──────────────────────────────────────────────
+// ── CaseMind AI · Demo dataset ──────────────────────────────────────────────
 // Every institution, officer, complainant, case and statistic below is FICTIONAL
 // demonstration data created for Smart India Hackathon 2026. No live AICTE
 // system is connected. Dates are generated relative to "today" so the demo

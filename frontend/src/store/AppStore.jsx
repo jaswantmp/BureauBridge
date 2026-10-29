@@ -191,7 +191,7 @@ function reducer(state, action) {
         ),
         complaints: state.complaints.map((c) =>
           [conflict.caseA, conflict.caseB].includes(c.caseId)
-            ? { ...c, updated: nowTs, timeline: [...c.timeline, { ts: nowTs, actor: actor || 'SAMANVAYA AI', type: 'conflict', text: timelineText[act] || `Conflict ${conflictId} updated.` }] }
+            ? { ...c, updated: nowTs, timeline: [...c.timeline, { ts: nowTs, actor: actor || 'CaseMind AI', type: 'conflict', text: timelineText[act] || `Conflict ${conflictId} updated.` }] }
             : c
         ),
         activity: addActivity(state, 'conflict', `Conflict ${conflictId} → ${statusLabel[act]} (${conflict.caseA} ↔ ${conflict.caseB})`, `/app/conflicts/${conflictId}`),

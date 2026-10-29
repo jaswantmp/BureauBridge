@@ -278,7 +278,7 @@ export default function ComplaintDetail() {
 
           <SectionCard title="Documents requested" sub="Avoid requesting records another bureau already has in flight" testid="documents-card">
             {(complaint.docs || []).length === 0 ? (
-              <p className="text-[12.5px] text-slate-500">No documents requested yet. Use “Request Documents” — SAMANVAYA will check for cross-bureau overlap first.</p>
+              <p className="text-[12.5px] text-slate-500">No documents requested yet. Use “Request Documents” — CaseMind AI will check for cross-bureau overlap first.</p>
             ) : (
               <div className="space-y-2">
                 {(complaint.docs || []).map((d, i) => (
@@ -441,7 +441,7 @@ export default function ComplaintDetail() {
           </div>
           <div className="mt-4 flex items-start gap-2.5 rounded-lg border border-cyan-400/25 bg-cyan-400/5 px-3.5 py-3">
             <Gavel size={14} className="mt-0.5 shrink-0 text-cyan-300" />
-            <p className="text-[11.5px] leading-relaxed text-slate-400">Before issuing, SAMANVAYA checks this institution’s open cases in other bureaus for overlapping document requests.</p>
+            <p className="text-[11.5px] leading-relaxed text-slate-400">Before issuing, CaseMind AI checks this institution’s open cases in other bureaus for overlapping document requests.</p>
           </div>
           <div className="mt-5 flex justify-end gap-2.5">
             <button data-testid="docs-cancel" onClick={closeAndClear} className="rounded-lg border border-slate-600/60 px-4 py-2 text-[12.5px] text-slate-300 hover:bg-slate-700/50">Cancel</button>

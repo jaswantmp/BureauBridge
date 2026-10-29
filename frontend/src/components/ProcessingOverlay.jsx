@@ -21,7 +21,7 @@ export function ProcessingOverlay() {
           </div>
           <div>
             <p className="font-display text-[15px] font-semibold text-slate-100">{processing.title}</p>
-            <p className="font-mono2 text-[10px] uppercase tracking-[0.2em] text-cyan-400/70 mt-0.5">SAMANVAYA AI · simulated processing</p>
+            <p className="font-mono2 text-[10px] uppercase tracking-[0.2em] text-cyan-400/70 mt-0.5">CaseMind AI · simulated processing</p>
           </div>
         </div>
 

@@ -110,7 +110,7 @@ export default function InstitutionForm() {
         testid="institution-form-header"
         eyebrow="Institution Registry"
         title={editing ? `Edit — ${existing?.name}` : 'Register a new institution'}
-        sub={editing ? 'Update the registry record. Linked complaints and aliases are preserved.' : 'On save, SAMANVAYA runs a duplicate analysis against the existing registry before creating the record.'}
+        sub={editing ? 'Update the registry record. Linked complaints and aliases are preserved.' : 'On save, CaseMind AI runs a duplicate analysis against the existing registry before creating the record.'}
       />
 
       {conflictCandidates ? (

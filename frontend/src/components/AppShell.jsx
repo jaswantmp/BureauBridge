@@ -29,7 +29,7 @@ function Logo() {
         </svg>
       </div>
       <div>
-        <p className="font-display font-bold text-[15px] tracking-tight text-slate-100 leading-none">SAMANVAYA <span className="text-cyan-300">AI</span></p>
+        <p className="font-display font-bold text-[15px] tracking-tight text-slate-100 leading-none">CaseMind <span className="text-cyan-300">AI</span></p>
         <p className="mt-1 font-mono2 text-[9.5px] uppercase tracking-[0.24em] text-slate-500">AICTE · Grievance Grid</p>
       </div>
     </div>
@@ -254,7 +254,7 @@ const TITLES = [
 export default function AppShell() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
-  const meta = TITLES.find((t) => t.match.test(location.pathname)) || { title: 'SAMANVAYA AI', eyebrow: 'Demo Environment' };
+  const meta = TITLES.find((t) => t.match.test(location.pathname)) || { title: 'CaseMind AI', eyebrow: 'Demo Environment' };
 
   useEffect(() => { window.scrollTo(0, 0); }, [location.pathname]);
 
@@ -312,7 +312,7 @@ export default function AppShell() {
         <footer className="relative px-4 lg:px-8 pb-8 pt-2">
           <div className="border-t border-slate-700/30 pt-4 flex flex-col md:flex-row gap-2 items-start md:items-center justify-between">
             <p className="text-[11px] text-slate-600 max-w-3xl leading-relaxed">{DEMO_NOTICE}</p>
-            <p className="font-mono2 text-[10px] text-slate-600 shrink-0">SAMANVAYA AI · v1.0-demo · SIH 2026</p>
+            <p className="font-mono2 text-[10px] text-slate-600 shrink-0">CaseMind AI · v1.0-demo · SIH 2026</p>
           </div>
         </footer>
       </div>

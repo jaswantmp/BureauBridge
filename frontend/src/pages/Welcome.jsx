@@ -55,7 +55,7 @@ export default function Welcome() {
             </svg>
           </div>
           <div>
-            <p className="font-display font-bold text-lg leading-none tracking-tight">SAMANVAYA <span className="text-[#C2570A]">AI</span></p>
+            <p className="font-display font-bold text-lg leading-none tracking-tight">CaseMind <span className="text-[#C2570A]">AI</span></p>
             <p className="font-mono2 text-[9px] uppercase tracking-[0.26em] text-[#0B1F4B]/60 mt-1">AICTE Integrated Grievance Grid</p>
           </div>
         </div>
@@ -71,11 +71,11 @@ export default function Welcome() {
         <div className="animate-fade-up">
           <p className="font-mono2 text-[11px] uppercase tracking-[0.3em] text-[#C2570A]">AICTE · Institution Complaint Monitoring & Status Dashboard</p>
           <h1 className="mt-5 font-display text-5xl md:text-6xl font-bold leading-[1.04] tracking-tight">
-            One grievance grid.<br />
-            <span className="text-[#C2570A]">Zero duplicated work.</span>
+            One institution.<br />
+            <span className="text-[#C2570A]">Connected cases. Smarter coordination.</span>
           </h1>
           <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-[#0B1F4B]/75">
-            SAMANVAYA AI brings AICTE’s institution records, complaint registers and bureau activity into a single
+            CaseMind AI brings AICTE’s institution records, complaint registers and bureau activity into a single
             monitoring surface — so different bureaus stop repeating work on the same case without anyone losing
             ownership of their own files.
           </p>
@@ -185,7 +185,7 @@ export default function Welcome() {
             <div className="grid place-items-center h-9 w-9 rounded-lg bg-[#F7F2E9]/10">
               <Building2 size={16} className="text-[#FF9933]" />
             </div>
-            <p className="font-mono2 text-[10px] uppercase tracking-[0.2em] text-[#F7F2E9]/60">SAMANVAYA AI · v1.0-demo</p>
+            <p className="font-mono2 text-[10px] uppercase tracking-[0.2em] text-[#F7F2E9]/60">CaseMind AI · v1.0-demo</p>
           </div>
         </div>
       </footer>
