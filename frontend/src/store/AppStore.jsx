@@ -18,6 +18,10 @@ function freshState() {
     coordinations: clone(COORDINATIONS),
     notifications: clone(NOTIFICATIONS),
     activity: clone(ACTIVITY),
+    categories: CATEGORIES,
+    officers: clone(OFFICERS),
+    bureauMap: BUREAU_MAP,
+    bureaus: BUREAUS,
   };
 }
 
@@ -26,7 +30,16 @@ function loadState() {
     const raw = localStorage.getItem(STORE_KEY);
     if (raw) {
       const parsed = JSON.parse(raw);
-      if (parsed && parsed.version === 1) return parsed;
+      if (parsed && parsed.version === 1) {
+        return {
+          ...freshState(),
+          ...parsed,
+          categories: parsed.categories || CATEGORIES,
+          officers: parsed.officers || clone(OFFICERS),
+          bureauMap: parsed.bureauMap || BUREAU_MAP,
+          bureaus: parsed.bureaus || BUREAUS,
+        };
+      }
     }
   } catch (e) { /* fall through */ }
   return freshState();
